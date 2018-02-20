@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: lightgray;
+}
+
+#cabecera{
+    width: 100%;
+    background-color: lightgray;
+
+}
+
+#cabecera img{
+    margin: 0 auto;
+    display: block;
+}
+
+#principal{
+    width: 75%;
+}
+
+#visualizacion{
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 18px black;
+    height: 500px;
+}
+
+#visualizacion *{
+    margin: 0 auto;
+    display: block;
+}
+
+#visualizacion img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#controles{
+    min-height: 50px;
+    width: 100%;
+    background-color: #003366;
+    position:relative;
+}
+
+#controles .control{
+    height: 40px;
+    width: 40px;
+}
+
+#listado{
+    min-height: 650px;
+    width: 25%;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 4px;
+    box-shadow: 0px 0px 18px black;
+}
+
+#listado p{
+    padding-top: 5px;
+}
+
+#pie{
+    width: 100%;
+    height: 100px;
+    background-color: #336699;
+
+}
+
+#pie *{
+    display: inline;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.noselect{
+    background-color: lightgray;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    vertical-align: center;
+    box-shadow: 5px 10px 18px black;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.selected{
+    background-color: #336699;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    vertical-align: center;
+    box-shadow: 8px 13px 18px black;
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.noselect:hover{
+    background-color: white;
+    box-shadow: 8px 13px 18px black;
+}
+
+
+#logo{
+    width: 350px;
+}
+
+#play:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+#pause:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+#adelantar:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+#controles .control{
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+#play{
+    left: 0px;
+}
+#pause{
+    left: 40px;
+}
+#adelantar{
+    left: 85px;
+}
+
+#menosVol{
+    left: 130px;
+}
+
+#masVol{
+    left: 250px;
+}
+
+#controles .control:hover{
+    height: 46px;
+    width: 46px;
+}
+
+.flecha{
+    width: 32px;
+    height: 32px;
+    display: inline;
+}
+
+#volumen{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: grey;
+    display: block;
+    left: 170px;
+    top: 5px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#volumenSel{
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    background-color: lightgray;
+    display: block;
+    left: 170px;
+    top: 5px;
+    pointer-events:none;
+}
+#volumen:hover{
+    width: 82px;
+    height: 42px;
+}
+
+#volumen:hover ~ #volumenSel{
+    background-color: rgb(0, 140, 255);
+    width: 42px;
+    height: 40px;
+}
+
+#volumenBloc{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    display: block;
+    left: 170px;
+    top: 5px;
+    pointer-events:none;
+}
+
+
+#iconoAudio{
+    position: relative;
+    width: 100px;
+    top: -60px !important;
+
+}
+
+#cajaControl{
+    position: relative;
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#subdiv{
+    position: absolute;
+    width: 46px;
+    height: 46px; 
+    left: 300px;
+}
+
+#subtitulo{
+    width: 30px;
+}
+
+#subtitulo:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+#login{
+    width: 45px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#masVol:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+#menosVol:hover > *{
+    fill: rgb(0, 140, 255);
+}
+
+@media (max-width: 1200px) {
+
+    #cabecera{
+        width: 100%;
+    }
+    
+    #login{
+        width: 30px;
+    }
+
+    #principal{
+        width: 100%;
+    }
+    
+    #visualizacion{
+        width: 100%;
+        height: auto;
+    }
+
+    #imagenAudio{
+        width: 100%;
+        top: 110px !important;
+    }
+
+    #iconoAudio{
+        top: auto !important;
+    }
+
+    video{
+        width: 100%;
+        height: auto;
+    }
+
+    #controles{
+        width: 100%;
+    }
+
+    #listado{
+        width: 100%;
+        min-height: 400px;
+    }
+
+    #pie img{
+        width: 25%;
+    }
+
+    #pie p{
+        display: block;
+        margin: 10px;
+    }
+
+}

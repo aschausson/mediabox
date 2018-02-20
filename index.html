@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/mediabox.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cabecera">
+        <img id="logo" src="data/img/mediabox.svg" alt="">
+        <img id="login" src="data/img/login.svg" alt="">
+    </div>
+
+    <div id="principal">
+        <div id="visualizacion">
+
+        </div>
+
+        <div id="controles">
+            <div id="cajaControl">
+                <svg id="play" class="control" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="15" viewBox="0 0 15 15">
+                    <polygon points="2,1 2,14 13,7.5" stroke="black" stroke-width="1" fill="white" />
+                </svg>
+    
+                <svg id="pause" class="control" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="15" viewBox="0 0 15 15">
+                    <rect x="2" y="2" width="4" height="11" stroke="black" stroke-width="1" fill="white" />
+                    <rect x="9" y="2" width="4" height="11" stroke="black" stroke-width="1" fill="white" />
+                </svg>
+    
+                <svg id="adelantar" class="control" xmlns="http://www.w3.org/2000/svg" version="1.1" width="23" height="15" viewBox="0 0 15 15">
+                    <polygon points="1,1 1,14 8,7.5" stroke="black" stroke-width="1" fill="white" />
+                    <polygon points="7,1 7,14 14,7.5" stroke="black" stroke-width="1" fill="white" />
+                </svg>
+
+                <svg height="512px" id="menosVol" class="volCont control" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M417.4,224H94.6C77.7,224,64,238.3,64,256c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32  C448,238.3,434.3,224,417.4,224z"/>
+                </svg>
+
+                <div id="volumen"></div>
+                <div id="volumenSel"></div>
+                <svg id="volumenBloc" xmlns="http://www.w3.org/2000/svg" version="1.1" width="80" height="40">
+                    <polygon points="0,0 0,40 80,0" fill="#003366" />
+                    <line x1="0" x2="80" y1="40" y2="0" stroke="black" stroke-width="2" />
+                </svg>
+                
+                <svg height="32px" id="masVol"  class="volCont control" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path fill="black" d="M28,14H18V4c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2  s2-0.896,2-2V18h10c1.104,0,2-0.896,2-2S29.104,14,28,14z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="listado">
+        <P id="0" class="select video selected">Metamorfosis - Kafka</p>
+        <br>
+        <P id="1" class="select audio noselect">Foo Fighters - Everlong</p>
+        <br>
+        <P id="2" class="select video noselect">Fallout 4 - The Wanderer</p>
+        <br>
+        <P id="3" class="select audio noselect">Mumford and Sons - Little Lion Man</p>
+        <br>
+        <P id="4" class="select video noselect">TileRunner - Demostración</p>
+        <br>
+        <P id="5" class="select audio noselect">Soundgarden - Black Hole Sun</p>
+        <br>
+    </div>
+
+    <div id="pie">
+        <img src="data/img/mediabox.svg" alt="">
+        <a href="https://creativecommons.org/licenses/by/1.0/"><img src="data/img/cc.svg" alt=""></a>
+        <p>Álvaro Suárez Chausson</p>
+    </div>
+
+
+    <script src="js/mediabox.js"></script>
+</body>
+
+</html>
